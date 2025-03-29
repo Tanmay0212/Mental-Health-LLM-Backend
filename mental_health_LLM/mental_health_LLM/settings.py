@@ -137,3 +137,6 @@ PINECONE_INDEX_NAME = os.environ.get('PINECONE_INDEX_NAME')
 
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+ALLOWED_HOSTS = ['*']  # Or restrict to your frontend domain
+DEBUG = False  # for production
