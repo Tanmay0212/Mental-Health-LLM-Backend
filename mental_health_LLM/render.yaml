@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mental-health-backend
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn mental_health_LLM.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: mental_health_LLM.settings
+
